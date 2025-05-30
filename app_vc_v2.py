@@ -2,7 +2,7 @@ import gradio as gr
 import torch
 import yaml
 import os
-# os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
+os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
 
 if torch.cuda.is_available():
     device = torch.device("cuda")

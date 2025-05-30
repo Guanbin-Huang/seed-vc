@@ -10,6 +10,8 @@ import shutil
 import uuid
 import soundfile as sf
 from inference_v2 import convert_voice_v2, load_v2_models
+os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
+
 
 app = FastAPI()
 args = None
